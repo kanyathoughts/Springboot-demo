@@ -1,11 +1,9 @@
 package com.demo.example.demo.controller;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -56,29 +54,4 @@ public class DemoController {
 		localMap.put("message from file", Files.readString(path));
 		return localMap;
 	}
-	
-	
-	
-	
-	
-
-}
-
-class Message {
-	private String message;
-
-	public Message(String message) {
-		super();
-		this.message = message;
-	}
-
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	
-	
 }
